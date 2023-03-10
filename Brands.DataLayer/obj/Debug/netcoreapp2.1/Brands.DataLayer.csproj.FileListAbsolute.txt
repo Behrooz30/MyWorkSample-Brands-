@@ -1,0 +1,9 @@
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\bin\Debug\netcoreapp2.1\Brands.DataLayer.deps.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\bin\Debug\netcoreapp2.1\Brands.DataLayer.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.csprojAssemblyReference.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.csproj.CoreCompileInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.AssemblyInfoInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.AssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\bin\Debug\netcoreapp2.1\Brands.DataLayer.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.DataLayer\obj\Debug\netcoreapp2.1\Brands.DataLayer.pdb

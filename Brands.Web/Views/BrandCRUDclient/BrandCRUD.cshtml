@@ -1,0 +1,605 @@
+﻿@model string
+@using Brands.Core.DTOs
+@using Brands.Core.DomainName
+
+
+@{
+    ViewData["Title"] = "BrandCRUDclient";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BrandCRUDclient</h2>
+<br />
+@if (User.Identity.IsAuthenticated)
+{
+    <a href="Logout">Log Out @User.Identity.Name.ToString() !</a>
+}
+<br />
+
+<div id="cssReference4MessageBox"></div>
+
+<div id="dialog_Edit" title="Attention">
+    <form>
+        <p>If you want to edit this item , please insert its new features!</p><br>
+        <p>Persian brand name: </p>
+        <input type="text" id="_PersianName4Edit" name="PersianName4Edit"><br>
+        <p>English brand name : </p>
+        <input type="text" id="_EnglishName4Edit" name="EnglishName4Edit"><br>
+        <div id="divOfDialogIMG"> <input type="image" id="MyImage" name="myImage" class="img"></div>
+        <div id="MyUploader_wrapper"><input type="file" id="MyUploader" name="myUploader" class="uploader"></div><br>
+    </form>
+</div>
+
+
+
+<div id="dialog_Add" title="Attention">
+    <form>
+        <p>If you want to add any item , please insert its features !</p><br>
+        <p>Persian brand name : </p>
+        <input type="text" id="_PersianName4Add" name="PersianName4Add"><br>
+        <p>English brand name : </p>
+        <input type="text" id="_EnglishName4Add" name="EnglishName4Add"><br>
+
+        <div id="divOfDialogIMG4Add"> <input type="image" id="MyImage4Add" name="myImage4Add" class="img"></div>
+        <div id="MyUploader_wrapper4Add"><input type="file" id="MyUploader4Add" name="myUploader4Add" class="uploader"></div><br>
+    </form>
+</div>
+
+
+<div id="dialog_Delete" title="Attention">
+
+    <p>Are you sure to delete an item with this features?</p>
+    <p>Persian brand name : </p> <p id="pers4Del"></p>
+    <p>English brand name : </p> <p id="eng4Del"></p>
+    <img id="MyImage4Del" />
+
+</div>
+
+
+
+<div id="dialog_Details" title="Attention">
+
+    <p>Selected item details : </p>
+    <p>Persian brand name : </p> <p id="pers4Details"></p>
+    <p>English brand name : </p> <p id="eng4Details"></p>
+    <img id="MyImage4Details" />
+
+</div>
+
+
+
+<div id="dialog_PicError" title="Attention">
+    
+        <p>The selected image is not in suitable format , please retry by another images</p><br>
+     
+    
+</div>
+
+<div class="block">
+    <button type="button" value="Add" style="height:50px;" onclick="AddItem()" class="btn btn-warning btn-xs btn-block">Add </button>
+</div>
+
+<table id="table" class="table">
+    <thead>
+        <tr>
+            <th>
+                Persian brand name
+            </th>
+            <th>
+                English brand name
+            </th>
+            <th>
+                Brand  picture
+            </th>
+
+        </tr>
+    </thead>
+    <tbody id="MyTbody"></tbody>
+
+
+</table>
+
+@section Scripts
+    {
+    <script src="/js/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+    <script>
+
+        var MyResult;
+
+        var _rowIndex;
+        var _brandId;
+        
+        $(document).ready(function () {
+        FetchAllBrandsFromBrandsTBL();
+        });
+
+function FetchAllBrandsFromBrandsTBL() {
+ $.ajax({
+            url: '@MyDomain.Domain' + '/api/BrandCRUD',
+            async: false,
+            type: 'GET',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            //data: model,
+            headers: {
+            'Authorization': 'Bearer @Model.ToString()'
+            },            
+            success: function (result) {
+
+                if (result.length != 0) {
+                    MyResult = result;
+                    
+                    for (i = 0; i < result.length; i++) {
+                        var brandid = String(result[i]["BrandId"]);
+                        var pers = String(result[i]["PersianBrandName"]);
+                        var eng = String(result[i]["EnglishBrandName"]);
+
+
+
+
+                        var append = "<tr id='" + result[i]["BrandId"] + "' class='list_1_'>" +
+                            "<td class='ColOfPersianName'>" +
+                            result[i]["PersianBrandName"] +
+                            "</td>" +
+
+                            "<td class='ColOfEnglishName'>" +
+                            result[i]["EnglishBrandName"] +
+                            "</td>" +
+
+                            "<td height=90px class='ImageColumn'>" +
+                            "<img id='test" + brandid + "' alt='test' src='' height='70px'/>" +
+
+                            "</td>" +
+
+
+                            "<td>" +
+                            '<table><tr><td>' +
+                            '<button type="button" value="Edit" style="height:50px;" onclick=' +
+                            '"EditThisItem(' + i + ",'" + brandid + "', " + "'" + pers + "'" + ',' + "'" + eng + "'" + ')" id =' +
+                            '"AddButton" class="btn btn-warning btn-xs btn-block" > ' + "Edit" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Details" style="height:50px; "  onclick=' +
+                            '"ShowItemDetails(' + "'" + brandid + "'" + ')" id = "ShowDetails"  class="btn btn-primary btn-xs btn-block" > ' +
+                            "Details" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Delete" style="height:50px; " onclick=' +
+                            '"DeleteItem(' + "'" + brandid + "'" + ')" id = "AddButton" class="btn btn-danger btn-xs btn-block" > ' +
+                            "Delete" + '</button > ' +
+                            '</td></tr></table>'
+
+
+                        "</td>" +
+                            "</tr>";
+
+                        
+                        $("#MyTbody").append(append);
+
+                        
+                        var element = document.getElementById('test' + brandid);
+                        element.empty;
+                        
+
+                        LoadOnePic(result[i]["BrandId"]);
+                        
+                    }
+                }
+            }
+            ,
+            error: function (error) { }
+        });
+
+    return MyResult;
+
+       }
+
+        function LoadOnePic(brandId) {                        
+                var ajaxOptions = {};
+                ajaxOptions.cache = false;
+                ajaxOptions.url = '@MyDomain.Domain' + '/api/BrandCRUD/GetPic/'+ brandId,
+                ajaxOptions.type = "GET";
+                ajaxOptions.headers = {'Authorization': 'Bearer @Model.ToString()'};
+            ajaxOptions.headers.Accept = "application/octet-stream"
+            ajaxOptions.success = function (result) {
+                if (result != undefined) {
+                    
+                    $("#test" + brandId).attr("src", "data:image/png;base64," + result);
+                }
+                };
+                ajaxOptions.error = function (jqXHR) {
+                    console.log("found error");
+                    console.log(jqXHR);
+                };
+                $.ajax(ajaxOptions);
+        }
+
+ function LoadOnePic4DialogBox(brandId) {            
+                var ajaxOptions = {};
+                ajaxOptions.cache = false;
+                ajaxOptions.url = '@MyDomain.Domain' + '/api/BrandCRUD/GetPic/'+ brandId,
+                ajaxOptions.type = "GET";
+                ajaxOptions.headers = {'Authorization': 'Bearer @Model.ToString()'};
+            ajaxOptions.headers.Accept = "application/octet-stream"
+            ajaxOptions.success = function (result) {
+                 if (result != undefined) {
+                    $("#MyImage").attr("src", "data:image/png;base64," + result);
+
+                    $("#MyImage4Del").attr("src", "data:image/png;base64," + result);
+
+                    $("#MyImage4Details").attr("src", "data:image/png;base64," + result);
+
+                }
+                else {
+                    $("#MyImage").attr("src", "data:image/png;base64," + null);
+
+                    $("#MyImage4Del").attr("src", "data:image/png;base64," + null);
+
+                    $("#MyImage4Details").attr("src", "data:image/png;base64," + null);
+                }
+            };
+                ajaxOptions.error = function (jqXHR) {
+                    console.log("found error");
+                    console.log(jqXHR);
+
+                };
+                $.ajax(ajaxOptions);
+        }
+
+
+        function AddItem() {
+
+            document.getElementById("cssReference4MessageBox").innerHTML =
+                ' <link href="/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet"/> ';
+
+            $(document).ready(function () {
+
+                $('#_PersianName4Add').val('');
+                $('#_EnglishName4Add').val('');
+                $("#MyImage4Add").attr("src", "data:image/png;base64," + null);
+                $('#MyUploader4Add').val('');
+
+                $("#dialog_Add").dialog("open");
+
+            });
+        }
+        
+        function DeleteItem(brandid) {
+            _brandId = brandid;
+            document.getElementById("cssReference4MessageBox").innerHTML =
+                ' <link href="/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet"/> ';
+            $(document).ready(function () {
+                var PersText = document.body.querySelector("[id='" + brandid + "'] .ColOfPersianName");
+                var EngText = document.body.querySelector("[id='" + brandid + "'] .ColOfEnglishName");
+                document.getElementById('pers4Del').innerHTML = PersText.textContent;
+                document.getElementById('eng4Del').innerHTML = EngText.textContent;
+                LoadOnePic4DialogBox(brandid);
+                $("#dialog_Delete").dialog("open");
+            });
+        }
+        
+                function ShowItemDetails(brandid) {
+                    _brandId = brandid;
+                    document.getElementById("cssReference4MessageBox").innerHTML =
+                        ' <link href="/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet"/> ';
+
+                    $(document).ready(function () {
+                        var PersText = document.body.querySelector("[id='" + brandid + "'] .ColOfPersianName");
+                        var EngText = document.body.querySelector("[id='" + brandid + "'] .ColOfEnglishName");
+                        document.getElementById('pers4Details').innerHTML = PersText.textContent;
+                        document.getElementById('eng4Details').innerHTML = EngText.textContent;
+                        LoadOnePic4DialogBox(brandid);
+                        $("#dialog_Details").dialog("open");
+                    });
+                }
+
+        function EditThisItem(rowIndex , brandId, persianBrandName, englishBrandName) {
+            document.getElementById("cssReference4MessageBox").innerHTML =
+                ' <link href="/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet"/> ';
+
+            _rowIndex = rowIndex;
+            _brandId = brandId;
+            _rowIndex = rowIndex;
+            brandId4DialogBox = brandId;
+            document.getElementById('_PersianName4Edit').value = persianBrandName;
+            document.getElementById('_EnglishName4Edit').value = englishBrandName;
+            LoadOnePic4DialogBox(brandId);
+            $(document).ready(function () {
+                $("#dialog_Edit").dialog("open");
+                $("#no").selected = "selected";
+            });
+        }
+
+        //this block cause to after changing the picture , the picture is changed suddenly :
+        function readURL(input) {
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.img').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#MyUploader").change(function () {
+            readURL(this);
+        });
+
+        $("#MyUploader4Add").change(function () {
+            readURL(this);
+        });
+
+        $("#dialog_Edit").dialog({
+            autoOpen: false,
+
+            width: 400,
+            modal: true,
+            buttons: {
+                'OK': function () {
+
+                    var PersianName4Edit = $('input[name="PersianName4Edit"]').val();
+                    var EnglishName4Edit = $('input[name="EnglishName4Edit"]').val();
+                    var myImage = $('input[name="myImage"]').val();
+                    var myUploader = $('input[name="myUploader"]').val();
+
+
+
+                    EditAnItem(PersianName4Edit, EnglishName4Edit);
+
+                    $(this).dialog('close');
+                },
+                'Cansel': function () {
+                    $(this).dialog('close');
+                }
+            }
+        });
+
+        function EditAnItem(PersianName4Edit, EnglishName4Edit) {
+            var model = new FormData();
+            model.append("BrandId", _brandId);
+            model.append("PersianBrandName", PersianName4Edit);
+            model.append("EnglishBrandName", EnglishName4Edit);
+            model.append("BrandPicture", $("#MyUploader")[0].files[0]);
+
+            $.ajax({
+                url: '@MyDomain.Domain' + '/api/BrandCRUD/EditBrand/',
+                type: "PUT",
+                headers: {
+                    'Authorization': 'Bearer @Model.ToString()'
+                },
+                dataType: "json",
+                data: model,
+                processData: false,
+                contentType: false,
+                complete: function (data) {
+                    if (data.status == 404)
+                    {
+                        $("#MyUploader").val('');
+                        $("#dialog_PicError").dialog("open");
+                    }
+                    else
+                    {                        
+                        var append = "<tr id='" + _brandId + "_'>" +
+                            "<td class='ColOfPersianName'>" +
+                            data.responseJSON.persianBrandName +
+                            "</td>" +
+                            "<td class='ColOfEnglishName'>" +
+                            data.responseJSON.englishBrandName +
+                            "</td>" +
+                            "<td height=90px class='ImageColumn'>" +
+                            "<img id='test" + _brandId + "' alt='test' src='' height='70px'/>" +
+
+                            "</td>" +
+
+
+                            "<td>" +
+                            '<table><tr><td>' +
+                            '<button type="button" value="Edit" style="height:50px;" onclick=' +
+                            '"EditThisItem(' + _rowIndex + ',' + _brandId + ',' + "'" + data.responseJSON.persianBrandName +
+                            "'" + ',' + "'" + data.responseJSON.englishBrandName + "'" + ')" id =' +
+                            '"AddButton" class="btn btn-warning btn-xs btn-block" > ' + "Edit" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Details" style="height:50px; "  onclick=' +
+                            '"ShowItemDetails(' + "'" + _brandId + "'" + ')" id = "ShowDetails"  class="btn btn-primary btn-xs btn-block" > ' +
+                            "Details" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Delete" style="height:50px; " onclick="DeleteItem(' + _brandId + ')" id=' +
+                            '"AddButton" class="btn btn-danger btn-xs btn-block" > ' + "Delete" + '</button > ' +
+                            '</td></tr></table>'
+
+
+                        "</td>" +
+
+                            "</tr>";
+
+                        //Notice that , in above I added an underline to id of append variable , then in below 
+                        //I included that befor of old row, and then I deleted the old row.
+                        //At end I renamed the id of append and I removed the underline from that.
+                        //This was because at the same times we cant have two element with same id.
+
+                        //خیلی مهم : کاری که در زیر کردیم این هست که اول در بالا آخر آی دی اپند را
+                        //یک آندرلاین گذاشتیم بعد در زیر آن را قبل از سطر قدیمی جای دادیم بعد
+                        //سطر قدیمی را پاک کردیم بعد آی دی اپند را تغییر دادیم و آندر لاین را از آخر آن
+                        //برداشتیم ، علت این کار ها این هست که در یک زمان دو عنصر دارای یک آی دی نمی توانند
+                        //باشند
+                        $("#" + _brandId).before(append);
+                        $("#" + _brandId).remove();
+                        document.getElementById(_brandId + '_').id = _brandId;
+                        var element = document.getElementById('test' + _brandId);
+                        LoadOnePic(_brandId);
+                        $("#MyUploader").val('');
+                    }
+                }
+            });
+        }
+
+        function AddAnItem(PersianName4Add, EnglishName4Add) {
+            var model = new FormData();
+            model.append("PersianBrandName", PersianName4Add);
+            model.append("EnglishBrandName", EnglishName4Add);
+            model.append("BrandPicture", $("#MyUploader4Add")[0].files[0]);
+            
+            $.ajax({
+                url: '@MyDomain.Domain' + '/api/BrandCRUD/AddBrand',
+                type: "Post",
+                ///async: false,
+                headers: {
+                    'Authorization': 'Bearer @Model.ToString()'
+                },
+                dataType: "json",
+                data: model,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                        _brandId = data.BrandId;
+                        var append = "<tr id='" + data.BrandId + "'>" +
+                            "<td class='ColOfPersianName'>" +
+                            data.PersianBrandName +
+                            "</td>" +
+                            "<td class='ColOfEnglishName'>" +
+                            data.EnglishBrandName +
+                            "</td>" +
+
+                            "<td height=90px class='ImageColumn'>" +
+                            "<img id='test" + _brandId + "' alt='test' src='' height='70px'/>" +
+
+                            "</td>" +
+
+
+                            "<td>" +
+                            '<table><tr><td>' +
+                            '<button type="button" value="Edit" style="height:50px;" onclick=' +
+                            '"EditThisItem(' + _rowIndex + ',' + _brandId + ',' + "'" + data.PersianBrandName + "'" +
+                            ',' + "'" + data.EnglishBrandName + "'" + ',' + ')" id =' +
+                            '"AddButton" class="btn btn-warning btn-xs btn-block" > ' + "Edit" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Details" style="height:50px; "  onclick=' +
+                            '"ShowItemDetails(' + "'" + _brandId + "'" + ')" id = "ShowDetails"  class="btn btn-primary btn-xs btn-block" > ' +
+                            "Details" + '</button > ' +
+                            '</td><td>' +
+                            '<button type="button" value="Delete" style="height:50px; " onclick="DeleteItem(' + _brandId + ')" id="AddButton" ' +
+                            'class="btn btn-danger btn-xs btn-block" > ' + "Delete" + '</button > ' +
+                            '</td></tr></table>'
+
+
+                        "</td>" +
+
+                            "</tr>";
+                    
+                        $('#MyTbody').append(append);
+                    
+                        var element = document.getElementById('test' + _brandId);
+                        LoadOnePic(_brandId);
+                        $("#MyUploader4Add").val('');
+                },
+                error: function (error) {
+                    if (error.status == 404) {
+                        $("#MyUploader4Add").val('');
+                        $("#dialog_PicError").dialog("open");
+                    }
+                }
+
+            });
+        }
+
+
+
+
+       function DelAnItem(brandid) {
+                    var model = new FormData();
+                    model.append("brandId", brandid);
+           
+            $.ajax({
+                url: '@MyDomain.Domain' + '/api/BrandCRUD/DeleteBrand/',
+                type: "Delete",
+                headers: {
+                    'Authorization': 'Bearer @Model.ToString()'
+                },
+                dataType: "json",
+                data: model,
+                processData: false,
+                contentType: false,
+                complete: function (data) {
+
+                    if (data == true) {
+                        //یعنی آیتم با موفقیت حذف شده
+                        //This is meaning the item is deleted successfully.
+                    }
+                    $('#MyTbody #' + brandid).remove();
+                }
+
+            });
+        }
+        
+        $("#dialog_Add").dialog({
+            autoOpen: false,
+
+            width: 400,
+            modal: true,
+            buttons: {
+                'OK': function () {
+
+                    var PersianName4Add = $('input[name="PersianName4Add"]').val();
+                    var EnglishName4Add = $('input[name="EnglishName4Add"]').val();
+                    var myImage = $('input[name="myImage4Add"]').val();
+                    var myUploader = $('input[name="myUploader4Add"]').val();
+                    AddAnItem(PersianName4Add, EnglishName4Add);
+
+                    $(this).dialog('close');
+                },
+                'Cansel': function () {
+                    $(this).dialog('close');
+                }
+            }
+                });
+        
+                $("#dialog_Delete").dialog({
+                    autoOpen: false,
+
+                    width: 400,
+                    modal: true,
+                    buttons: {
+                        'OK': function () {
+                            DelAnItem(_brandId);
+
+                            $(this).dialog('close');
+                        },
+                        'Cansel': function () {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+        
+                $("#dialog_Details").dialog({
+                    autoOpen: false,
+
+                    width: 400,
+                    modal: true,
+                    buttons: {
+                        'OK': function () {
+                            $(this).dialog('close');
+                        }
+                    }
+        });
+
+        $("#dialog_PicError").dialog({
+            autoOpen: false,
+
+            width: 400,
+            modal: true,
+            buttons: {
+                'OK': function () {
+                    $(this).dialog('close');
+                }
+               
+            }
+        });
+
+    </script>
+
+}
