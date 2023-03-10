@@ -9,10 +9,12 @@ The test used in this project is the repository layer test.
 The used technologies in this project are :
 
 C# , ASP.Net Core 2.1 , MVC , Repository Design Pattern , EF , EF Core , Ajax , Dependency Injection , XUnit , Javascript , TDD , Unit Test , XUnit , JWT , Web API , Identity , SQL Server 2017 (SSMS 17.4).
+My IDE was : Visual Studio 2017  Version 15.9.38
 
 **Important** : As much as possible ,I selected meaningful names for variables , functions ,classes and other members of project ,therefor ,this project is approximately *self document*.
 
-Notice that I used a package with name *GleamTech.ImageUltimate* for resizing the pictures. This package does not belong to me.
+Notice that I used a package with name *GleamTech.ImageUltimate* for resizing the pictures. This package does not belong to me , also notice that I
+used Visual Studio 2017 IDE for this project.
 
 **Features and abilities :**
 
