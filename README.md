@@ -84,27 +84,27 @@ The above block is mocking *FindAsync()* method of a DbSet object.
   users to our data(in normal state).
   For avoiding from this problem I use from middlewares,in startup file and in the first of Configure method I have wroten:
   app.Use(async (context, next) =>
-            {
-                if (context.Request.Path.Value.ToString().ToLower().StartsWith("/brands images"))
-                {
-                    var callingUrl = context.Request.Headers["Referer"].ToString();
-                    if (callingUrl != "" 
-                    && (callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.Domain)
-                    || callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_2nd_DomainName)
-                    || callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_3th_DomainName)))
-                    {
-                        await next.Invoke();
-                    }
-                    else
-                    {
-                        context.Response.Redirect("/Login");
-                    }
-                }
-                else
-                {
-                    await next.Invoke();
-                }
-   });
+  `            `{
+`            `if (context.Request.Path.Value.ToString().ToLower().StartsWith("/brands images"))
+`            `{
+`            ` var callingUrl = context.Request.Headers["Referer"].ToString();
+`            ` if (callingUrl != "" 
+`            `      && (callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.Domain)
+`                   `|| callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_2nd_DomainName)
+`                   `|| callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_3th_DomainName)))
+`            `{
+`                `await next.Invoke();
+`            `}
+`            `else
+`                   `{
+`                       `context.Response.Redirect("/Login");
+`                   `}
+`            ` }
+`         `else
+`            `{
+`            ` await next.Invoke();
+`            `}
+`   `});
   and this is meaning if anyone wants to access to data in wwwroot (Brands Images folder) as a unauthorized user then they navigate to Login page.
 
 **Authorization on this project :**
