@@ -19,8 +19,4 @@
     <ProjectReference Include="..\Brands.DataLayer\Brands.DataLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\Brands Images\" />
-  </ItemGroup>
-
 </Project>

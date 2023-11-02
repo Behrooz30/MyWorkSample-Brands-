@@ -108,6 +108,32 @@ namespace Brands.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path.Value.ToString().ToLower().StartsWith("/brands images"))
+                {
+                    var callingUrl = context.Request.Headers["Referer"].ToString();
+                    if (callingUrl != "" 
+                    && (callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.Domain)
+                    || callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_2nd_DomainName)
+                    || callingUrl.StartsWith(Brands.Core.DomainName.MyDomain.My_3th_DomainName)))
+                    {
+                        await next.Invoke();
+                    }
+                    else
+                    {
+                        context.Response.Redirect("/Login");
+                    }
+                }
+                else
+                {
+                    await next.Invoke();
+                }
+
+
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
