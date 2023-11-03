@@ -82,7 +82,7 @@ The above block is mocking *FindAsync()* method of a DbSet object.
 - Other challenge is avoiding from "Insecure File Upload" attacks.
   This problem is when we save the data in wwwroot folder and it leads to access all
   users to our data(in normal state).
-  For avoiding from this problem I use from middlewares,in startup file and in the first of Configure method my code is meaning, if anyone wants to access to data in wwwroot (Brands Images folder) as a unauthorized user then they navigate to Login page.
+  For avoiding from this problem I use middlewares,in startup file and in the first of Configure method, my code is meaning :if anyone wants to access to data in wwwroot (Brands Images folder) as a unauthorized user then they navigate to Login page.
 
 **Authorization on this project :**
 
