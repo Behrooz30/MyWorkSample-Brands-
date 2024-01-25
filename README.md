@@ -11,7 +11,7 @@ is the optimized branch that on that is avoided from "Insecure-File-Upload"
 attacks.
 The used technologies in this project are :
 
-C# , ASP.Net Core 2.1 , MVC , Repository Design Pattern , EF , EF Core , Ajax , Dependency Injection , XUnit , Javascript , TDD , Unit Test , XUnit , JWT , Web API , Identity , SQL Server 2017 (SSMS 17.4).
+C# , ASP.Net Core 2.1 , MVC , Repository Pattern , EF , EF Core , Ajax , Dependency Injection , XUnit , Javascript , TDD , Unit Test , XUnit , JWT , Web API , Identity , SQL Server 2017 (SSMS 17.4).
 
 **Important** : As much as possible ,I selected meaningful names for variables , functions ,classes and other members of project ,therefor ,this project is approximately *self document*.
 
@@ -34,7 +34,7 @@ This is meaning we have two class , anyone for mock data and other for Xunit sta
 
 The data in mock data class is used in Xunit class by dependency injection , therefore data in mock class is not necessary to be repeat and is written only one time (for every repository).
 
-Notice that all of add , remove and deleting the brands work by Ajax.
+Notice that all of add , update and deleting the brands work by Ajax.
 
 For more security of Ajax statements , it is used JWT.
 
@@ -86,7 +86,7 @@ The above block is mocking *FindAsync()* method of a DbSet object.
 
 **Authorization on this project :**
 
-There are used a Combination maner to authorization in this project.
+There are used a Combination maner to authorization in this project (Multi-Factor Authentication).
 As you see in startup file ,I used both of JwtBearer and Cookie based authentication.
 But when the project used JwtBearer authentication and when used Cookie authentication?
 The answer is that if the authorization header starts with "Bearer" ,it is used JwtBearer authentication,
@@ -138,7 +138,7 @@ Notice that we had a client side controller (AuthClientSideController) and a ser
 
 **Contact with developer**
 
-E-Mail : <behrooz0372@gmail.com>
+E-Mail : <Behrooz0372@gmail.com>
 
 **License**
 
