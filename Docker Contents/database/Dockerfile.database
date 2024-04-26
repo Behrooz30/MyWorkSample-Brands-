@@ -1,0 +1,10 @@
+FROM mcr.microsoft.com/mssql/server:2017-latest 
+COPY ./BrandsDb.mdf /var/opt/mssql/data/BrandsDb.mdf
+COPY ./BrandsDb_log.ldf /var/opt/mssql/data/BrandsDb_log.ldf
+RUN mkdir -p /usr/src/app
+#COPY ./create-database.sql /usr/src/app/create-database.sql
+COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
+COPY ./run-initialization.sh /usr/src/app/run-initialization.sh
+#WORKDIR /usr/src/app
+CMD /bin/bash ./usr/src/app/entrypoint.sh
+RUN chmod +x /usr/src/app/run-initialization.sh

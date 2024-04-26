@@ -1,0 +1,30 @@
+version: '2.15.1'
+services:
+  web:
+    image: brands-web
+    ports:
+      - 80:80
+    environment:
+      - APP_DOMAIN=http://localhost:80
+      - CONNECTION_STRING=Server=db;Database=BrandsDb;User=sa;Password=asdASD123!!!;MultipleActiveResultSets=true;
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - db
+    #working_dir: /app/Brands.Web
+    command: ["sh", "-c", "cd /app/Brands.Web && dotnet watch run --urls http://*:80"]
+    volumes:
+      - ./BrandsImages:/app/wwwroot/Brands Images
+    restart: unless-stopped
+  db:    
+    build:
+      context: ./database
+      dockerfile: Dockerfile.database
+    environment:
+      - "SA_PASSWORD=asdASD123!!!"
+      - "ACCEPT_EULA=Y"
+    ports:
+      - 1433:1433
+    volumes:
+      - ./database/BrandsDb.mdf:/var/opt/mssql/data/BrandsDb.mdf
+      - ./database/BrandsDb_log.ldf:/var/opt/mssql/data/BrandsDb_log.ldf
+    restart: unless-stopped

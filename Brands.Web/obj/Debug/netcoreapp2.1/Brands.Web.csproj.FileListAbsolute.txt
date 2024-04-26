@@ -1,0 +1,115 @@
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.deps.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.dev.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csprojAssemblyReference.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CoreCompileInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfoInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.input.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.output.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorCoreGenerate.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CopyComplete
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\AuthClientSide\Login.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\BrandCRUDclient\BrandCRUD.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.deps.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.dev.json
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csprojAssemblyReference.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CoreCompileInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfoInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.input.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.output.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorCoreGenerate.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\AuthClientSide\Login.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\BrandCRUDclient\BrandCRUD.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CopyComplete
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands_2 - bckup_28_OK_آماده برای مستند سازی\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.deps.json
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.json
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.runtimeconfig.dev.json
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.dll
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.dll
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.dll
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.Core.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\bin\Debug\netcoreapp2.1\Brands.DataLayer.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csprojAssemblyReference.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CoreCompileInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfoInputs.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.AssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.input.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.TagHelpers.output.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorCoreGenerate.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\AuthClientSide\Login.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\BrandCRUDclient\BrandCRUD.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cache
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.RazorTargetAssemblyInfo.cs
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.Views.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.csproj.CopyComplete
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.dll
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\Brands.Web.pdb
+E:\Iman madaeni\MyGitProj4CV\Brands\Brands\Brands.Web\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
