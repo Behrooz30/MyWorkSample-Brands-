@@ -1,7 +1,7 @@
 version: '2.15.1'
 services:
   web:
-    image: brands-web
+    image: https://www.mediafire.com/file/qvnwpq5kbun0zgs/brands-web.zip/file
     ports:
       - 80:80
     environment:
