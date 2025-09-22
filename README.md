@@ -1,5 +1,4 @@
 ﻿**A short description a bout this project :**
-
 In Brands project, an user can register in it then he/she can add , remove and edit brands features in addition their images ,and if that user again logins to project with the same user name and password, he will see his changes that he have done last time.
 
 Also this project has a test layer that is written by Unit Test and XUnit.
